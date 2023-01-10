@@ -41,12 +41,17 @@ class MainActivity : ComponentActivity() {
                     color = Color.White
                 ) {
 
-                    Dashboard()
-                    HomeScreen()
 
+}
+                    Column() {
+
+                        HomeScreen()
+
+
+                    }
+
+                Dashboard()
                 }
-
-            }
 
 
         }
@@ -569,7 +574,7 @@ private fun BottomBar(
     onSectionSelected: (DashboardSection) -> Unit,
 ) {
     BottomNavigation(
-        modifier = Modifier.height(5.dp),
+        modifier = Modifier.height(40.dp),
         backgroundColor = Color.White,
         contentColor = contentColorFor(MaterialTheme.colors.background)
     ) {
