@@ -1,4 +1,4 @@
-package Navigation
+package navigation
 
 sealed class Screen(val route:String){
     object Dashboard :Screen("Dashboard")
@@ -7,4 +7,5 @@ sealed class Screen(val route:String){
     object PaymentScreen :Screen("Payment_Screen")
     object PopularScreen :Screen("Popular_Screen")
     object ProductDetailScreen :Screen("Product_Detail_Screen")
+    object HomeScreen :Screen ("Home_Screen")
 }
